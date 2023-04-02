@@ -1,0 +1,6 @@
+# Dogs-and-cat-recognition-project
+This is a dogs and cats recognition project that uses Convolutional Neural Networks (CNN) to classify images of cats and dogs. The project uses the TensorFlow and Keras libraries to build the CNN model. The project starts by importing the required libraries and then defining the data generators for training and testing datasets. The training data generator is used to perform data augmentation on the training dataset to improve the model's ability to generalize. The model is then defined using the Sequential API of Keras and consists of two convolutional layers followed by max pooling layers. The model also has a flatten layer followed by two dense layers. The final dense layer has a single neuron with a sigmoid activation function, which is used to classify the input image as either a dog or a cat.
+
+The project then compiles the model using the binary cross-entropy loss function and the Adam optimizer. The model is then trained on the training dataset using the fit method, and the accuracy of the model is evaluated on the testing dataset.
+
+Finally, the project loads a single image from the test dataset, preprocesses it, and feeds it to the model for prediction. The prediction is then printed, indicating whether the input image is a cat or a dog.
